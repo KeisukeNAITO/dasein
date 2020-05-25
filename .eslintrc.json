@@ -1,0 +1,30 @@
+{
+    "env": {
+        "commonjs": true,
+        "es6": true,
+        "node": true,
+        "jest/globals": true
+    },
+    "extends": [
+        "plugin:node/recommended",
+        "eslint:recommended",
+        "plugin:prettier/recommended"
+    ],
+    "plugins": [
+        "node",
+        "jest",
+        "prettier"
+    ],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parserOptions": {
+        "ecmaVersion": 11,
+        "sourceType": "module"
+    },
+    "rules": {
+        "prettier/prettier": ["error", {"singleQuote": true}],
+        "no-unused-vars": "warn"
+    }
+}
